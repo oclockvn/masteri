@@ -1,4 +1,17 @@
-@import "./var";
-@import "./partials";
-@import "./components";
-@import "./pages";
+html,
+body {
+  font-family: Roboto, sans-serif;
+}
+
+@import "var";
+@import "partials";
+@import "components";
+@import "pages";
+
+.outline-none {
+  outline: none;
+}
+
+.decoration-none {
+  text-decoration: none;
+}

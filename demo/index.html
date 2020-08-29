@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/vendor/css/bootstrap.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -12,12 +13,12 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container-fluid">
     <a href="#" class="brand">
       <span class="logo">M</span>
     </a>
 
-    <aside class="head-right">
+    <aside class="head__right">
       <nav class="head-nav">
         <ul class="menu">
           <li>
@@ -32,16 +33,20 @@
         </ul>
       </nav>
 
-      <a href="#" id="callme">
-        <img src="assets/img/phone.svg" alt="Call me">
+      <a href="#" id="callme" class="btn btn-sm shadow">
+        <img src="assets/img/phone.svg" alt="Call me" style="width: 20px;">
         <span>(+84) 091 658 1461</span>
       </a>
 
-      <button type="button" title="Dark mode" class="theme-toggle"></button>
+      <button type="button" title="Dark mode" class="btn btn-link ml-2 outline-none p-1">
+        <img src="assets/img/moon.svg" alt="dark theme">
+      </button>
     </aside>
   </header>
 
-  <section class="banner"></section>
+  <section class="banner">
+    <img src="assets/img/cover_banner.jpg" alt="banner">
+  </section>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

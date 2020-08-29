@@ -1,0 +1,23 @@
+$link-color: #fff;
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    flex: 1;
+  }
+
+  a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $link-color;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}

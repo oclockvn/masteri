@@ -1,3 +1,92 @@
+html,
+body {
+  font-family: Roboto, sans-serif;
+}
 
+.brand {
+  display: block;
+  text-decoration: none !important;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header .head__right {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.head-nav {
+  margin-right: 3rem;
+  position: relative;
+}
+.head-nav:after {
+  content: "";
+  display: block;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  right: -1rem;
+  top: 30%;
+  bottom: 30%;
+}
+
+#callme {
+  display: block;
+  outline: none;
+  text-decoration: none;
+  background: #4caf50;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu li {
+  flex: 1;
+}
+.menu a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
