@@ -15,3 +15,20 @@ body {
 .decoration-none {
   text-decoration: none;
 }
+
+.hoverable {
+  transition: 0.3s ease-in;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
+
+.list-none {
+  list-style: none;
+}
+
+.fit-cover {
+  object-fit: cover;
+}

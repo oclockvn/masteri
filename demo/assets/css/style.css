@@ -81,12 +81,76 @@ body {
   font-size: 1rem;
 }
 
+.property-section {
+  background: #f0f2f5;
+  padding: 0 0 2rem 0;
+}
+.property-section .section__title {
+  padding: 3rem 0;
+}
+.property-section .section__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.property {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.property .property__info {
+  padding: 1rem;
+}
+.property .property__preview img {
+  min-height: 164px;
+}
+
+.property-name {
+  font-size: 1.1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.property-location {
+  font-size: 0.9rem;
+}
+
+.property-utilities img {
+  width: 20px;
+}
+.property-utilities li + li {
+  margin-left: 2rem;
+}
+
+.price {
+  color: #f42;
+  font-weight: 700;
+}
+
 .outline-none {
   outline: none;
 }
 
 .decoration-none {
   text-decoration: none;
+}
+
+.hoverable {
+  transition: 0.3s ease-in;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.hoverable:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.list-none {
+  list-style: none;
+}
+
+.fit-cover {
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

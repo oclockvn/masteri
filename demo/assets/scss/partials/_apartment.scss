@@ -1,0 +1,58 @@
+$property-section-bg: #f0f2f5;
+
+.property-section {
+  background: $property-section-bg;
+  padding: 0 0 2rem 0;
+
+  .section__title {
+    padding: 3rem 0;
+  }
+
+  .section__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+.property {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .property__info {
+    padding: 1rem;
+  }
+
+  .property__preview {
+    img {
+      min-height: 164px;
+    }
+  }
+}
+
+.property-name {
+  font-size: 1.1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.property-location {
+  font-size: 0.9rem;
+}
+
+.property-utilities {
+  img {
+    width: 20px;
+  }
+
+  li + li {
+    margin-left: 2rem;
+  }
+}
+
+.price {
+  color: $price-color;
+  font-weight: 700;
+}
