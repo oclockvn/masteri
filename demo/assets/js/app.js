@@ -6,9 +6,9 @@ class Apartment {
   }
 }
 
-class RentViewModel {
+class FeatureViewModel {
   constructor() {
-    this.rents = ko.observableArray([
+    this.apartments = ko.observableArray([
       new Apartment({
         name: 'A01 Lorem ipsum dolor sit amet',
         price: '5 ty 8',
@@ -47,5 +47,6 @@ class RentViewModel {
 }
 
 (function () {
-  ko.applyBindings(new RentViewModel(), document.getElementById('feature-for-rent'));
+  ko.applyBindings(new FeatureViewModel(), document.getElementById('feature-for-rent'));
+  ko.applyBindings(new FeatureViewModel(), document.getElementById('feature-for-buy'));
 })();
