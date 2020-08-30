@@ -32,3 +32,11 @@ body {
 .fit-cover {
   object-fit: cover;
 }
+
+a {
+  color: #333;
+
+  &:hover {
+    color: $primary-color;
+  }
+}

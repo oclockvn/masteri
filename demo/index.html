@@ -179,6 +179,41 @@
     </div>
   </section>
 
+  <section class="section-news">
+    <div class="section__title text-center">
+      <h3 class="">Latest news</h3>
+    </div>
+
+    <div class="grid-news container">
+      <div class="features-news">
+        <a href="#" title="">
+          <img src="assets/img/news.jpg" alt="features news">
+        </a>
+        <div class="news__details">
+          <a href="#" title="" class="d-block decoration-none news-heading">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet vitae non explicabo officiis</h3>
+          </a>
+          <div class="pub-date">30/08/2020</div>
+        </div>
+      </div>
+
+      <div class="latest-news" id='latest-news'>
+        <!-- ko foreach: news -->
+        <div class="news">
+          <img alt="news preview" data-bind="attr: { src: 'assets/img/' + img(), alt: alt }">
+          <div>
+            <a href="#" title="" data-bind="attr: { title: title }" class="d-block deconration-none news-heading">
+              <h4 data-bind="text: title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sunt a
+                deserunt harum molestias dolore impedit?</h4>
+            </a>
+            <div data-bind="text: pubDate" class="pub-date">30/08/2020</div>
+          </div>
+        </div>
+        <!-- /ko -->
+      </div>
+    </div>
+  </section>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

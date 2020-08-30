@@ -46,7 +46,48 @@ class FeatureViewModel {
   }
 }
 
+class News {
+  constructor(data) {
+    Object.keys(data).forEach(k => {
+      this[k] = ko.observable(data[k]);
+    });
+  }
+}
+
+class NewsViewModel {
+  constructor() {
+    this.news = ko.observableArray([
+      new News({
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odit',
+        pubDate: '28/08/2020',
+        img: 'news-1.jpg',
+        alt: 'news 1',
+      }),
+      new News({
+        title: 'debitis animi praesentium magni fuga hic dicta excepturi natus dignissimos',
+        pubDate: '29/08/2020',
+        img: 'news-2.jpg',
+        alt: 'news 1',
+      }),
+      new News({
+        title: 'corporis, cum laboriosam illo velit! Nisi voluptatem ad veritatis?',
+        pubDate: '30/08/2020',
+        img: 'news-3.jpg',
+        alt: 'news 1',
+      }),
+      new News({
+        title: 'debitis animi praesentium magni fuga hic dicta excepturi natus dignissimos itaque corporis, cum laboriosam',
+        pubDate: '02/09/2020',
+        img: 'news-4.jpg',
+        alt: 'news 1',
+      })
+    ]);
+  }
+}
+
 (function () {
   ko.applyBindings(new FeatureViewModel(), document.getElementById('feature-for-rent'));
   ko.applyBindings(new FeatureViewModel(), document.getElementById('feature-for-buy'));
+
+  ko.applyBindings(new NewsViewModel(), document.getElementById('latest-news'));
 })();
