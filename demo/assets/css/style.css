@@ -61,6 +61,33 @@ body {
   color: #fff;
 }
 
+.footer {
+  background: #000111;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+.footer a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.4s ease-in;
+}
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.socials li {
+  margin-right: 1rem;
+}
+
+.contact img {
+  margin-right: 0.25rem;
+}
+
 .menu {
   display: flex;
   align-items: center;
