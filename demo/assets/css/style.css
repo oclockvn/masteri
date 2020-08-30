@@ -68,13 +68,12 @@ body {
 }
 .footer a {
   color: rgba(255, 255, 255, 0.6);
-  transition: 0.4s ease-in;
+  transition: 0.2s ease-in;
 }
 .footer a:hover {
   color: #fff;
 }
-
-.footer-title {
+.footer h4 {
   color: #fff;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -86,6 +85,10 @@ body {
 
 .contact img {
   margin-right: 0.25rem;
+}
+
+.end {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .menu {
