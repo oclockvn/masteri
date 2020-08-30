@@ -98,17 +98,49 @@ body {
   padding: 0;
   list-style: none;
 }
-.menu li {
+.menu > li {
   flex: 1;
+  position: relative;
+}
+.menu > li > a {
+  color: #fff !important;
+}
+.menu > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
 }
 .menu a {
   display: block;
-  padding: 1rem;
+  padding: 1rem 0;
   text-decoration: none;
   text-transform: capitalize;
   color: #fff;
   font-weight: 300;
   font-size: 1rem;
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  padding: 0.25rem 0;
+  background: #fff;
+  border-radius: 0.25rem;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -0.5rem;
+}
+.sub-menu a {
+  display: block;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+.sub-menu a:hover {
+  background: #f0f2f5;
 }
 
 .property-section {

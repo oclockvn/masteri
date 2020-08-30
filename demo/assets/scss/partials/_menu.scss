@@ -7,17 +7,53 @@ $link-color: #fff;
   padding: 0;
   list-style: none;
 
-  li {
+  > li {
     flex: 1;
+    position: relative;
+
+    > a {
+      color: #fff !important;
+    }
+
+    &:hover .sub-menu {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   a {
     display: block;
-    padding: 1rem;
+    padding: 1rem 0;
     text-decoration: none;
     text-transform: capitalize;
     color: $link-color;
     font-weight: 300;
     font-size: 1rem;
+  }
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  padding: 0.25rem 0;
+  background: #fff;
+  border-radius: 0.25rem;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -0.5rem;
+
+  a {
+    display: block;
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    color: #333;
+    font-size: 0.9rem;
+
+    &:hover {
+      background: $main-bg;
+    }
   }
 }
