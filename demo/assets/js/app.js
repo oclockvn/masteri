@@ -85,9 +85,34 @@ class NewsViewModel {
   }
 }
 
-(function () {
-  ko.applyBindings(new FeatureViewModel(), document.getElementById('feature-for-rent'));
-  ko.applyBindings(new FeatureViewModel(), document.getElementById('feature-for-buy'));
+class ListingViewModel {
+  constructor() {
+    this.listing = ko.observableArray([...new Array(12)].map((_, i) =>
+      new Apartment({
+        name: 'A01 Lorem ipsum dolor sit amet',
+        price: '5 ty 8',
+        area: '80m2',
+        bedroom: 2,
+        toilet: 2,
+        floor: 5,
+      })));
+  }
+}
 
-  ko.applyBindings(new NewsViewModel(), document.getElementById('latest-news'));
+(function () {
+  if (document.getElementById('feature-for-rent')) {
+    ko.applyBindings(new FeatureViewModel(), document.getElementById('feature-for-rent'));
+  }
+
+  if (document.getElementById('feature-for-buy')) {
+    ko.applyBindings(new FeatureViewModel(), document.getElementById('feature-for-buy'));
+  }
+
+  if (document.getElementById('latest-news')) {
+    ko.applyBindings(new NewsViewModel(), document.getElementById('latest-news'));
+  }
+
+  if (document.getElementById('listing')) {
+    ko.applyBindings(new ListingViewModel(), document.getElementById('listing'));
+  }
 })();

@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass assets/scss/style.scss assets/css/style.css"
+    "scss": "sass assets/scss/style.scss assets/css/style.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "feather-icons": "^4.28.0"
   }
 }

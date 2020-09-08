@@ -1,0 +1,22 @@
+.filter-form {
+  button {
+    margin-right: 0.5rem;
+  }
+}
+
+.listing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.search-form {
+  .material-icons {
+    color: #aaa;
+  }
+
+  input {
+    border: none;
+    outline: none;
+  }
+}

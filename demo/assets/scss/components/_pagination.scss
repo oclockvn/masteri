@@ -1,0 +1,10 @@
+.page-item {
+  .page-link {
+    color: $primary-color;
+  }
+
+  &.active .page-link {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
