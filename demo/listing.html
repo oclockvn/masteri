@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/vendor/css/bootstrap.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header container-fluid header--index">
+  <header class="header container-fluid">
     <a href="#" class="brand">
       <span class="logo">M</span>
     </a>
@@ -75,32 +76,59 @@
     </aside>
   </header>
 
-  <section class="banner">
-    <img src="assets/img/cover_banner.jpg" alt="banner">
-  </section>
-
-  <section class="py-5 text-center why-us">
-    <h3 class="mb-4">Why Us / Who Am I</h3>
-    <article class="container w-50">
-      <p class="mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas nobis soluta animi natus repellendus
-        cupiditate nemo quia maxime? Molestiae eaque, officia eius dolores necessitatibus commodi quasi harum fugit
-        quibusdam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores ipsam sit sapiente iure quo
-        mollitia laudantium quisquam, sed libero possimus, eaque inventore? Soluta consequuntur cumque qui laboriosam
-        beatae voluptates.
-      </p>
-
-      <a href="#" class="btn btn-outline btn-outline-dark px-5 rounded-0">See More</a>
-    </article>
-  </section>
-
-  <section class="property-section" id="feature-for-rent">
-    <div class="section__title text-center">
-      <h3 class="m-0">Feature Properties for Rent</h3>
+  <section class="bg-light border border-light py-3">
+    <div class="container">
+      <div class="filter-form d-flex align-items-center">
+        <label for="" class="mb-0 mr-3">Filter</label>
+        <div class="flex-fill d-flex">
+          <button class="btn btn-primary rounded-pill" type="button">
+            Any Prices
+            <img src="assets/img/chevron-down.svg" alt="price">
+          </button>
+          <button class="btn btn-primary rounded-pill" type="button">
+            Any beds
+            <img src="assets/img/chevron-down.svg" alt="price">
+          </button>
+          <button class="btn btn-primary rounded-pill" type="button">
+            Any bathtooms
+            <img src="assets/img/chevron-down.svg" alt="price">
+          </button>
+          <button class="btn btn-primary rounded-pill" type="button">
+            More
+            <img src="assets/img/chevron-down.svg" alt="price">
+          </button>
+          <button class="btn btn-primary rounded-pill" type="button">
+            Sort by
+            <img src="assets/img/chevron-down.svg" alt="price">
+          </button>
+          <button type="button" class="btn btn-danger rounded-pill px-4">Clear</button>
+        </div>
+        <div class="align-items-center bg-white border d-flex p-1 rounded search-form">
+          <span class="align-items-center border-right d-flex px-1 search__icon">
+            <i class="material-icons">search</i>
+          </span>
+          <input type="search" class="px-2">
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="section__content container">
-      <!-- ko foreach: apartments -->
+  <section class="border border-light">
+    <nav aria-label="breadcrumb" class="container">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#">
+            <i class="material-icons">home</i>
+            Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+      </ol>
+    </nav>
+  </section>
+
+  <section class="section-listing my-3" id='listing'>
+    <div class="container mb-1">
+      <b>Showing 1 - 20 of 250 listings</b>
+    </div>
+    <div class="container listing" data-bind="foreach: listing">
       <div class="property hoverable">
         <a href="#" class="property__preview d-block decoration-none">
           <img src="assets/img/room1.jpg" alt="Room preview" class="d-block w-100 fit-cover">
@@ -137,115 +165,18 @@
           </div>
         </div>
       </div>
-      <!-- /ko -->
     </div>
 
-    <div class="container mt-2">
-      <div class="align-items-center row">
-        <div class="col-md-5 text-center">
-          <img src="assets/img/contact.svg" alt="Contact me" style="width: 300px;">
-        </div>
-        <div class="col-md-7">
-          <h2>Your apartment is available for rent?</h2>
-          <p>Drop me a line! It's free and easy. Your apartment will be here very soon.</p>
-          <a href="#" class="btn btn-outline-dark px-4 rounded-0">Contact me</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <nav aria-label="Page navigation" class="container d-flex justify-content-center py-4">
+      <ul class="pagination mb-0">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
 
-  <section class="property-section" id="feature-for-buy" style="background: hsl(216deg 20% 90%);">
-    <div class="section__title text-center">
-      <h3 class="m-0">Feature Properties for Buy</h3>
-    </div>
-
-    <div class="section__content container">
-      <!-- ko foreach: apartments -->
-      <div class="property hoverable">
-        <a href="#" class="property__preview d-block decoration-none">
-          <img src="assets/img/room1.jpg" alt="Room preview" class="d-block w-100 fit-cover">
-        </a>
-        <div class="property__info">
-          <div class="d-flex algin-items-center">
-            <span data-bind="text: price" class="price">5b8</span>
-            <span class="mx-2">&mdash;</span>
-            <span data-bind="text: area">80m2</span>
-          </div>
-          <div class="my-2">
-            <a href="" class="d-block decoration-none property-name m-0" data-bind="text: name">A01 Lorem ipsum dolor
-              sit amet consectetur adipisicing
-              elit.
-            </a>
-            <div class="property-location">Masteri Thao Dien</div>
-          </div>
-          <div>
-            <ul class="algin-items-center d-flex list-none m-0 p-0 property-utilities">
-              <li>
-                <img src="assets/img/bed-empty.svg" alt="Bedroom">
-                <span data-bind="text: bedroom">2</span>
-              </li>
-              <li>
-                <img src="assets/img/toilet.svg" alt="Toilet">
-                <span data-bind="text: toilet">2</span>
-              </li>
-              <li>
-                <img src="assets/img/floor.svg" alt="Toilet">
-                <span data-bind="text: floor">2</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- /ko -->
-    </div>
-
-    <div class="container mt-2">
-      <div class="align-items-center row">
-        <div class="col-md-7">
-          <h2>Let's us help you selling your property</h2>
-          <p>Our system will help you reach the target buyer better</p>
-          <a href="#" class="btn btn-outline-dark px-4 rounded-0">Contact me</a>
-        </div>
-        <div class="col-md-5 text-center">
-          <img src="assets/img/seo.svg" alt="Contact me" style="width: 300px;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-news">
-    <div class="section__title text-center">
-      <h3 class="">Latest news</h3>
-    </div>
-
-    <div class="grid-news container">
-      <div class="features-news overflow-hidden shadow rounded-lg">
-        <a href="#" title="">
-          <img src="assets/img/news.jpg" alt="features news">
-        </a>
-        <div class="news__details">
-          <a href="#" title="" class="d-block decoration-none news-heading">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet vitae non explicabo officiis</h3>
-          </a>
-          <div class="pub-date">30/08/2020</div>
-        </div>
-      </div>
-
-      <div class="latest-news" id='latest-news'>
-        <!-- ko foreach: news -->
-        <div class="news">
-          <img alt="news preview" data-bind="attr: { src: 'assets/img/' + img(), alt: alt }" class="rounded-lg shadow">
-          <div>
-            <a href="#" title="" data-bind="attr: { title: title }" class="d-block deconration-none news-heading">
-              <h4 data-bind="text: title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sunt a
-                deserunt harum molestias dolore impedit?</h4>
-            </a>
-            <div data-bind="text: pubDate" class="pub-date">30/08/2020</div>
-          </div>
-        </div>
-        <!-- /ko -->
-      </div>
-    </div>
   </section>
 
   <footer class="footer pt-5">

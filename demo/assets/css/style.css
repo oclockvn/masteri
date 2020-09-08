@@ -1,3 +1,7 @@
+:root {
+  --primary: #ba68c8;
+}
+
 html,
 body {
   font-family: Roboto, sans-serif;
@@ -20,12 +24,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header.header--index {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .header .head__right {
   display: flex;
@@ -270,6 +276,61 @@ body {
 
 .pub-date {
   font-size: 0.9rem;
+}
+
+.filter-form button {
+  margin-right: 0.5rem;
+}
+
+.listing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.search-form .material-icons {
+  color: #aaa;
+}
+.search-form input {
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #ba68c8;
+  border-color: #ba68c8;
+}
+.btn-primary:not(:disabled):not(.disabled):hover, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):focus {
+  background-color: #ba68c8;
+  border-color: #ba68c8;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled):focus {
+  box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, 0.5);
+}
+
+.breadcrumb {
+  background: #fff;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.breadcrumb a {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+}
+.breadcrumb a i {
+  margin-right: 4px;
+  color: #6c757d;
+}
+
+.page-item .page-link {
+  color: #ba68c8;
+}
+.page-item.active .page-link {
+  background-color: #ba68c8;
+  border-color: #ba68c8;
 }
 
 .outline-none {
