@@ -134,21 +134,15 @@
           <img src="assets/img/room1.jpg" alt="Room preview" class="d-block w-100 fit-cover">
         </a>
         <div class="property__info">
-          <div class="d-flex algin-items-center">
-            <span data-bind="text: price" class="price">5b8</span>
-            <span class="mx-2">&mdash;</span>
-            <span data-bind="text: area">80m2</span>
-          </div>
-          <div class="my-2">
-            <a href="#" class="d-block decoration-none property-name m-0" data-bind="text: name">A01 Lorem ipsum dolor
-              sit amet consectetur
-              adipisicing
-              elit.
-            </a>
-            <div class="property-location">Masteri Thao Dien</div>
-          </div>
           <div>
             <ul class="algin-items-center d-flex list-none m-0 p-0 property-utilities">
+              <li class="flex-fill">
+                <span data-bind="text: price" class="price">5b8</span>
+              </li>
+              <li>
+                <img src="assets/img/bed-empty.svg" alt="Bedroom">
+                <span>80m2</span>
+              </li>
               <li>
                 <img src="assets/img/bed-empty.svg" alt="Bedroom">
                 <span data-bind="text: bedroom">2</span>
@@ -157,11 +151,15 @@
                 <img src="assets/img/toilet.svg" alt="Toilet">
                 <span data-bind="text: toilet">2</span>
               </li>
-              <li>
-                <img src="assets/img/floor.svg" alt="Toilet">
-                <span data-bind="text: floor">2</span>
-              </li>
             </ul>
+          </div>
+          <div class="my-2">
+            <a href="#" class="d-block decoration-none property-name m-0" data-bind="text: name">A01 Lorem ipsum dolor
+              sit amet consectetur
+              adipisicing
+              elit.
+            </a>
+            <div class="property-location">Masteri Thao Dien</div>
           </div>
         </div>
       </div>

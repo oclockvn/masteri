@@ -189,7 +189,7 @@ body {
   width: 20px;
 }
 .property-utilities li + li {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .price {
@@ -284,8 +284,8 @@ body {
 
 .listing {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
 
 .search-form .material-icons {
